@@ -1,3 +1,4 @@
+import HomeBanner from "src/components/ui-elements/banner/Banner";
 import LandingBrand from "src/components/ui-elements/brand-items/LandingBand";
 import SwiperSlide from "src/components/ui-elements/swiper-slide/SwiperSlide";
 
@@ -23,8 +24,12 @@ export const Home = () => {
 					<SwiperSlide mappingData={mappingData} />
 				</div>
 			</div>
+
+			<div className="mt-6">
+				<HomeBanner />
+			</div>
 			<div className="mt-6 text-xl text-white">Рекомендации для вас:</div>
-			<div className="flex-1 mt-6 pr-2 overflow-y-scroll  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7  gap-[22px] w-full">
+			<div className="flex-1 mt-6 pr-2 overflow-y-scroll  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6  gap-[22px] w-full">
 				{recommendations.map((rec, index) => {
 					return <LandingBrand rec={rec} index={index} />;
 				})}
