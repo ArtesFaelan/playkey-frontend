@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Container } from "src/components/layout/Container";
-// import { NotFound, Home } from "../components/views";
+import { Home } from "src/components/views/Home";
 
 export const Navigation = () => (
 	<BrowserRouter>
 		<Routes>
 			<Route path="/" element={<Container />}>
-				<Route index element={<div>Home</div>} />
+				<Route index element={<Home />} />
 				{/* <Route path="*" element={<NotFound />} /> */}
 			</Route>
 		</Routes>
