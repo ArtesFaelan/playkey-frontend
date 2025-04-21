@@ -3,6 +3,7 @@
 :root {
 	color-scheme: light dark;
 	font-synthesis: none;
+	font-family: inter;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -12,4 +13,12 @@
 body {
 	margin: 0;
 	padding: 0;
+}
+
+@theme {
+	--color-primary: #6060ff;
+	--color-gray: #2b2a37;
+	--color-black: #17171b;
+	--color-green: #00ff62;
+	--color-white: #ffffff;
 }
