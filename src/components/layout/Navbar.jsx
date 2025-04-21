@@ -6,7 +6,7 @@ export const Navbar = () => {
 		<>
 			<nav class="bg-black">
 				<div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-					<div class="relative flex h-16 items-center justify-between pt-10">
+					<div class="relative flex h-fit items-center justify-between pt-10">
 						<div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
 							<div class="flex shrink-0 items-center">
 								<Logo isDark={true} />
