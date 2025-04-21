@@ -4,14 +4,14 @@ import SearchInput from "src/components/ui-elements/input/SearchInput";
 export const Navbar = () => {
 	return (
 		<>
-			<nav class="bg-black">
-				<div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-					<div class="relative flex h-fit items-center justify-between pt-10">
-						<div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-							<div class="flex shrink-0 items-center">
+			<nav className="bg-black">
+				<div className="mx-auto ">
+					<div className="relative flex h-fit items-center justify-between pt-10">
+						<div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+							<div className="flex shrink-0 items-center">
 								<Logo isDark={true} />
 							</div>
-							<div class="flex flex-row gap-2 px-4 w-full">
+							<div className="flex flex-row gap-2 px-4 w-full">
 								<SimpleButton
 									content={
 										<>
@@ -36,9 +36,9 @@ export const Navbar = () => {
 								badgeEnabled={true}
 								badge={
 									<>
-										<span class="sr-only">Notifications</span>
-										<div class="absolute inline-flex items-center justify-center p-1 rounded-[8px] text-xs font-bold text-white bg-green border-2 border-white -top-3 -end-2 dark:border-gray-900">
-											<p className="text-black">New !</p>
+										<span className="sr-only">Notifications</span>
+										<div className="absolute inline-flex items-center justify-center p-1 rounded-[8px] text-xs font-bold text-white bg-green border-2 border-white -top-3 -end-2 dark:border-gray-900">
+											<span className="text-black">New !</span>
 										</div>
 									</>
 								}

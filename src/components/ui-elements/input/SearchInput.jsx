@@ -5,7 +5,7 @@ function SearchInput({ placeholder }) {
 		<>
 			<div className="w-full  mx-auto ">
 				<label
-					for="default-search"
+					htmlFor="default-search"
 					className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
 				>
 					Search
@@ -21,9 +21,9 @@ function SearchInput({ placeholder }) {
 						>
 							<path
 								stroke="currentColor"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								strokeWidth="2"
 								d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
 							/>
 						</svg>
@@ -37,10 +37,10 @@ function SearchInput({ placeholder }) {
 					/>
 					<button
 						type="submit"
-						class="absolute top-0 end-0 p-2.5 text-sm font-medium h-full text-white bg-primary rounded-[10px] border border-blue-700"
+						className="absolute top-0 end-0 p-2.5 text-sm font-medium h-full text-white bg-primary rounded-[10px] border border-blue-700"
 					>
 						Найти
-						<span class="sr-only">Search</span>
+						<span className="sr-only">Search</span>
 					</button>
 				</div>
 			</div>
