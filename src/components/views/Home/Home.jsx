@@ -19,20 +19,22 @@ export const Home = () => {
 	}));
 	return (
 		<>
-			<div className="flex justify-center">
-				<div className="h-full w-full my-auto">
-					<SwiperSlide mappingData={mappingData} />
+			<div className="w-[calc(h-screen-106px)] overflow-y-scroll scrollbar-hidden mt-4">
+				<div className="flex justify-center">
+					<div className="h-full w-full my-auto">
+						<SwiperSlide mappingData={mappingData} />
+					</div>
 				</div>
-			</div>
 
-			<div className="mt-6">
-				<HomeBanner />
-			</div>
-			<div className="mt-6 text-xl text-white">Рекомендации для вас:</div>
-			<div className="flex-1 mt-6 pr-2 overflow-y-scroll  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6  gap-[22px] w-full">
-				{recommendations.map((rec, index) => {
-					return <LandingBrand rec={rec} index={index} />;
-				})}
+				<div className="mt-6">
+					<HomeBanner />
+				</div>
+				<div className="mt-6 text-xl text-white">Рекомендации для вас:</div>
+				<div className="flex-1 mt-6 pr-2 overflow-y-hidden  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6  gap-[22px] w-full">
+					{recommendations.map((rec, index) => {
+						return <LandingBrand rec={rec} index={index} />;
+					})}
+				</div>
 			</div>
 		</>
 	);
