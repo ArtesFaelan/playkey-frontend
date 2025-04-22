@@ -19,7 +19,7 @@ export const Home = () => {
 	}));
 	return (
 		<>
-			<div className="w-[calc(h-screen-106px)] overflow-y-scroll scrollbar-hidden mt-4">
+			<div className="h-[calc(h-screen-106px)] overflow-y-scroll scrollbar-hidden mt-4">
 				<div className="flex justify-center">
 					<div className="h-full w-full my-auto">
 						<SwiperSlide mappingData={mappingData} />

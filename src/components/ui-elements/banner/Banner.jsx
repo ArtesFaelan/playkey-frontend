@@ -1,3 +1,5 @@
+import SimpleButton from "../button/SimpleButton";
+
 const HomeBanner = () => {
 	return (
 		<>
@@ -11,6 +13,9 @@ const HomeBanner = () => {
 							<h1 className="text-3xl lg:text-4xl font-semibold text-white dark:text-gray-800">
 								на <span className="font-bold text-white">playkey</span>
 							</h1>
+						</div>
+						<div className="absolute bottom-4 left-4 z-100 w-1/2 md:w-full">
+							<SimpleButton content={"Посмотреть"} />
 						</div>
 						<div className="md:absolute md:bottom-0 lg:bottom-0 md:mt-8 md:mt-0 sm:flex sm:justify-center md:justify-end">
 							<img
