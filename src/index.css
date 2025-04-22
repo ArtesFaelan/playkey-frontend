@@ -22,3 +22,9 @@ body {
 	--color-green: #00ff62;
 	--color-white: #ffffff;
 }
+
+@utility scrollbar-hidden {
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}

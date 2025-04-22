@@ -5,13 +5,13 @@ export const Navbar = () => {
 	return (
 		<>
 			<nav className="bg-black">
-				<div className="mx-auto ">
-					<div className="relative flex h-fit items-center justify-between pt-10">
-						<div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+				<div className="mx-auto h-16">
+					<div className="relative flex h-fit items-center justify-between">
+						<div className="flex flex-1 items-between justify-between sm:items-stretch md:justify-between">
 							<div className="flex shrink-0 items-center">
 								<Logo isDark={true} />
 							</div>
-							<div className="flex flex-row gap-2 px-4 w-full">
+							<div className="flex flex-row gap-2 px-4 w-full invisible hidden lg:flex lg:visible">
 								<SimpleButton
 									content={
 										<>
@@ -23,7 +23,7 @@ export const Navbar = () => {
 													className=""
 													src="src/assets/Меню значек 1.svg"
 												></img>
-												<div>Каталог</div>
+												<div className="pr-2">Каталог</div>
 											</div>
 										</>
 									}

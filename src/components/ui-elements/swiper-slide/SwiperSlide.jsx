@@ -41,7 +41,7 @@ const SwiperSlide = ({ mappingData }) => {
 									className=" duration-700 ease-in-out"
 									data-carousel-item
 								>
-									{index == 5 ? (
+									{index + 1 == mappingData.length ? (
 										<SwiperSlideButton content={item} active={true} />
 									) : (
 										<SwiperSlideButton content={item} />
